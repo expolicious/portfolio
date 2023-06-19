@@ -1,16 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body { 
-  background-image: url();
+  background-image: url(/CSS/Images/background-portfoliot.jpg);
+  background-size: cover;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+header{
+  display: inline-block;
+  position: fixed
+}
+.navbar {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  color: white;
+  width: 100vw;
+  height: 40px;
+  background-color: rgba(169, 169, 169, 0.5);
+  
+}
+
+.über-mich {
+  box-sizing: content-box;
+  display: inline-block;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.burger {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+.links{
+  display: inline-block;
+  padding-right: 20px;
+}
+
+img{
+  height: 40vh;
+  display: block;
+  margin: auto;
+
+}
+.picture{
+  display: inline-block;
+  
+  width: 100vw;
+  margin-top: 30vh ;
+  
+}
+.footer{background-color: rgba(169, 169, 169, 0.5); font-family: helvetica;
+  color: white;
+  width: 100vw;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+
+}
+.contact{
+  display: block;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-ul {
-  color: mintcream;
-  text-align: left;
-  list-style: none;
-}
-
-li li {
-  list-style: upper-roman;
-  color: aquamarine;
+  padding-top: 10px;
 }
