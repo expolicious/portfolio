@@ -3,12 +3,13 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "helvetica light", sans-serif;
-  color: #444444;
-}
-.index-body{
+  color: #444444;}
+
+body{
   background-image: url(/Images/hell.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
   width: 100vw;
   height: 100vh;
   display: flex;
@@ -17,72 +18,133 @@
 
 header{
   display: flex;
-  justify-content: center;
-}
+  justify-content: center;}
+
 nav{
   padding-top: 5px;}
 
-.index-main{
+main{
   display: flex;
-  justify-content: flex-end;
-  padding-right: 30px;
-  
+  justify-content: center
+  ;
+  }
 
-}
-footer{display: flex;
-  flex-direction: column;
+footer{
+  display: flex;
+  justify-content: center;
   align-items: center;
- 
- padding-bottom: 30px;
+  padding-bottom: 5vh;}
+
+.right{  
+  
+  font-size: small;
+  text-decoration: none;
+  position: fixed;
+  top: 50vh;
+  right: 15px;}
+
+.left{
+  font-size: small;
+  text-decoration: none;
+  position: fixed;
+  top: 50vh;
+  left: 15px;
 }
 
-footer div{
-  display: flex;
-  flex-direction: row;
+footer a{
+  padding: 5px;
 }
 
-a{padding: 5px;
-font-size: small;
-text-decoration: none;}
-
-.hover{display: none;}
-
-.point-index:hover + .home{
-  display: content;
+.index-grid+.about-grid{
+  width: 90vw;
+  
 }
 
+  /*----index Page-------*/
+
+.index-grid{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: 
+  'index-eins';
+  text-align: center;
+}
+h3{font-size: 3rem;}
+p{font-size: 1.5rem;}
+
+  /*----about Page-------*/
+
+.about-body{
+  background-image: url(/Images/hintergrundbild_duisburg.png);}
+  
+.about-grid{border: 1px solid red;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(9, 1fr);
+  grid-template-areas:
+  '. privat . . werdegang . . ziele .' ;
+}
+.grid{border: 1px solid green;}
+
+.privat{grid-area: privat;}
+.werdegang{grid-area: werdegang;}
+.ziele{grid-area: ziele;}
  /*----Skills Page-------*/
- .skills-body{
-  background-image: url(/Images/platine.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;}
 
-  .skills-main{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-  }
+.skills-body{
+  background-image: url(/Images/platine.jpg);}
 
+.skills-grid{
+ 
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+  ' . . . '
+  'badgr . gold' 
+  'badgr-erkl . gold-erkl';}
+
+.badgr{
+  box-shadow:  0px 0px 5px 5px white;
+  padding: 20px;
+  border-radius: .5rem;
+  grid-area: badgr;}
+
+.gold{
+  box-shadow:  0px 0px 5px 5px white;
+  padding: 20px;
+  border-radius: .5rem;
+  grid-area: gold;}
+
+.badgr-erkl{
+  width: 200px;
+  grid-area: badgr-erkl;
+  background-color: rgba(240, 248, 255, 0.747);
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: .5rem;}
+
+.gold-erkl{
+  width: 200px;
+  grid-area: gold-erkl;background-color: rgba(240, 248, 255, 0.747);
+  margin: auto;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: .5rem;}
+
+.skills-grid img{
+  width: 200px;
+  
+}
 /*----Kontakt Page-------*/
-.kontakt{
-  background-image: url(/Images/offices.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;}
 
-  .kontakt-main{
-    display: flex;
-    justify-content: space-between;
-    padding: 30px;
-  }
+.kontakt{
+  background-image: url(/Images/offices.jpg);}
+
+
 
  
