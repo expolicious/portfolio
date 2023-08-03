@@ -94,57 +94,77 @@ p{font-size: 1.5rem;}
  /*----Skills Page-------*/
 
 .skills-body{
-  background-image: url(/Images/platine.jpg);}
+  background-image: url(/Images/abstraktes-hintergrund-zement-wand-schatten-licht-konzept.jpg);}
 
 .skills-grid{
  
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
-  ' . . . '
-  'badgr . gold' 
-  'badgr-erkl . gold-erkl';}
+  '. . .'
+  'html-icon . css-icon'
+  'badgr-begin badgr-new badgr-classrep' 
+  '. gold .';}
 
-.badgr{
-  box-shadow:  0px 0px 5px 5px white;
+.badgr-begin{
+  grid-area: badgr-begin;
+  padding: 20px;
+  border-radius: .5rem;}
+
+.badgr-new{
+  grid-area: badgr-new;
   padding: 20px;
   border-radius: .5rem;
-  grid-area: badgr;}
+}
 
+.badgr-classrep{
+  grid-area: badgr-classrep;
+  padding: 20px;
+  border-radius: .5rem;
+}
 .gold{
-  box-shadow:  0px 0px 5px 5px white;
+  grid-area: gold;
   padding: 20px;
-  border-radius: .5rem;
-  grid-area: gold;}
-
-.badgr-erkl{
-  width: 200px;
-  grid-area: badgr-erkl;
-  background-color: rgba(240, 248, 255, 0.747);
-  margin: auto;
-  font-size: 1.5rem;
-  text-align: center;
   border-radius: .5rem;}
 
-.gold-erkl{
-  width: 200px;
-  grid-area: gold-erkl;background-color: rgba(240, 248, 255, 0.747);
-  margin: auto;
-  font-size: 1.5rem;
-  text-align: center;
-  border-radius: .5rem;}
+.html-icon{
+  grid-area: html-icon;}
+
+.css-icon{
+  grid-area: css-icon;
+  }
 
 .skills-grid img{
-  width: 200px;
-  
-}
+  width: 140px;}
+
 /*----Kontakt Page-------*/
 
 .kontakt{
-  background-image: url(/Images/offices.jpg);}
+  background-image: url(/Images/einbaustrahlern-in-studio-hintergrund_1048-221.avif);}
 
+.kontakt-grid{
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas:
+  "git mail linked" ;
+}
 
-
- 
+.git{
+  grid-area: git;
+  padding: 20px 0px;
+  border-radius: .5rem;
+}
+.mail{
+  grid-area: mail;
+  padding: 20px 0px;
+  border-radius: .5rem;
+}
+.linked{
+  grid-area: linked;
+  padding: 20px 0px;
+  border-radius: .5rem;
+}
