@@ -72,8 +72,12 @@ p{font-size: 1.5rem;}
   /*----about Page-------*/
 
 .about-body{
-  background-image: url(/Images/hintergrundbild_duisburg.png);}
-  
+  background-image: url(./Images/hintergrundbild_duisburg_zwei.png);}
+
+.carousel-delay{
+  animation-delay: 10s !important;
+  -webkit-animation-delay: 10s !important;
+}
 
 
  /*----Skills Page-------*/
