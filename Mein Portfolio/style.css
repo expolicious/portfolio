@@ -74,18 +74,7 @@ p{font-size: 1.5rem;}
 .about-body{
   background-image: url(/Images/hintergrundbild_duisburg.png);}
   
-.about-grid{border: 1px solid red;
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  grid-template-areas:
-  '. privat . . werdegang . . ziele .' ;}
 
-.grid{border: 1px solid green;}
-
-.privat{grid-area: privat;}
-.werdegang{grid-area: werdegang;}
-.ziele{grid-area: ziele;}
 
  /*----Skills Page-------*/
 
@@ -102,7 +91,7 @@ p{font-size: 1.5rem;}
   '. . .'
   'html-icon . css-icon'
   'badgr-begin badgr-new badgr-classrep' 
-  '. gold .';}
+  '. . .';}
 
 .badgr-begin{
   grid-area: badgr-begin;
@@ -116,11 +105,6 @@ p{font-size: 1.5rem;}
 
 .badgr-classrep{
   grid-area: badgr-classrep;
-  padding: 20px;
-  border-radius: .5rem;}
-
-.gold{
-  grid-area: gold;
   padding: 20px;
   border-radius: .5rem;}
 
