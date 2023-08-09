@@ -34,7 +34,6 @@ footer{
   padding-bottom: 5vh;}
 
 .right{  
-  
   font-size: small;
   text-decoration: none;
   position: fixed;
@@ -54,31 +53,58 @@ footer a{
 .index-grid+.about-grid{
   width: 90vw;}
 
-  /*----index Page-------*/
+/*----index Page-------*/
+
+.expo{
+  width: 100px;
+  animation-duration: 5s; 
+  animation-iteration-count: infinite;
+  animation-name: smoothSlidein;
+  animation-direction: reverse;}
+
+@keyframes smoothSlidein {
+  100%, 0% {
+      transform: translateX(0%);}
+
+  50% {
+      transform: translateX(480%);}}
 
 .index-grid{
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas: 
-  'index-eins';
+  grid-template-areas: 'index-eins';
   text-align: center;}
 
 h3{font-size: 3rem;}
 
 p{font-size: 1.5rem;}
 
-  /*----about Page-------*/
+/*----about Page-------*/
 
+.links{
+  font-size: small;
+  text-decoration: none;
+  position: fixed;
+  top: 50vh;
+  left: 15px;
+  color: #191919;}
+
+.rechts{
+  font-size: small;
+  text-decoration: none;
+  position: fixed;
+  top: 50vh;
+  right: 15px;
+  color: #191919;}
+  
 .about-body{
   background-image: url(./Images/hintergrundbild_duisburg_zwei.png);}
 
 .carousel-delay{
   animation-delay: 10s !important;
-  -webkit-animation-delay: 10s !important;
-}
-
+  -webkit-animation-delay: 10s !important;}
 
  /*----Skills Page-------*/
 
@@ -86,7 +112,6 @@ p{font-size: 1.5rem;}
   background-image: url(/Images/abstraktes-hintergrund-zement-wand-schatten-licht-konzept.jpg);}
 
 .skills-grid{
- 
   display: grid;
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
@@ -123,6 +148,11 @@ p{font-size: 1.5rem;}
 
 /*----Projekte Page-------*/
 
+.blog{
+  margin-bottom: 15px;}
+
+.marketing{
+  text-align: end;}
 
 /*----Kontakt Page-------*/
 
@@ -134,8 +164,7 @@ p{font-size: 1.5rem;}
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr;
-  grid-template-areas:
-  "git mail linked" ;}
+  grid-template-areas:"git mail linked" ;}
 
 .git{
   grid-area: git;
